@@ -32,7 +32,7 @@ ChestAura ThroughWalls false
 ChestAura VisualSwing false
 ChestAura Chest 54
 ChestStealer MaxDelay 40
-ChestStealer MinDelay 20
+ChestStealer MinDelay 30
 ChestStealer TakeRandomized true
 ChestStealer OnlyItems false
 ChestStealer NoCompass false
@@ -41,18 +41,18 @@ ChestStealer AutoCloseMaxDelay 2
 ChestStealer AutoCloseMinDelay 1
 ChestStealer CloseOnFull true
 ChestStealer ChestTitle true
-Criticals Mode HypixelPacket
-Criticals Delay 150
-Criticals HurtTime 8
+Criticals Mode NoGround
+Criticals Delay 0
+Criticals HurtTime 7
 FastClimb Mode Normal
 FastClimb NormalSpeed 0.28
 FastPlace Speed 0
 FastUse Mode CustomDelay
 FastUse Delay 11
 Fly Mode CubeCraft
-CubeFastLadder Movement 2.00
-CubeFastLadder TickRate 1
-CubeFastLadder Timer 0.65
+CubeFastLadder Movement 1.95
+CubeFastLadder TickRate 2
+CubeFastLadder Timer 0.40
 CubeClipper NeededPackets 11
 CubeClipper FallingSpeed 1.00
 CubeClipper MaxUpDistance 2
@@ -75,7 +75,6 @@ Fucker Surroundings false
 Fucker Action Use
 Fucker NoHit true
 Spammer Message CubecoreIsBad
-Spammer Custom false
 Spammer MaxDelay 3000
 Spammer MinDelay 2500
 LongJump Mode NCP
@@ -94,7 +93,7 @@ InventoryCleaner SortSlot-2 Bow
 InventoryCleaner SortSlot-3 Pickaxe
 InventoryCleaner SortSlot-4 Axe
 InventoryCleaner SortSlot-5 None
-InventoryCleaner SortSlot-6 GApple
+InventoryCleaner SortSlot-6 GoldenApple
 InventoryCleaner SortSlot-7 Food
 InventoryCleaner SortSlot-8 Block
 InventoryCleaner SortSlot-9 Block
@@ -116,35 +115,32 @@ AntiBot WasInvisible false
 AntiBot Armor false
 AntiBot Ping false
 AntiBot NeedHit false
-KillAura MaxCPS 15
-KillAura MinCPS 13
+KillAura MaxCPS 20
+KillAura MinCPS 20
 KillAura HurtTime 7
 KillAura Range 6.00
 KillAura ThroughWallsRange 4.0
 KillAura RangeSprintReducement 0.00
-KillAura Priority Health
+KillAura Priority LivingTime
 KillAura TargetMode Switch
 KillAura Swing true
 KillAura KeepSprint true
-KillAura AutoBlock true
 KillAura InteractAutoBlock true
 Killaura DelayedBlock false
 KillAura BlockRate 100
 KillAura AAC false
-KillAura RayCast true
+KillAura RayCast false
 KillAura RayCastIgnored true
-KillAura LivingRayCast true
-KillAura Predict true
-KillAura MaxPredictSize 1.0
-KillAura MinPredictSize 0.50
+KillAura LivingRayCast false
+KillAura Predict false
 KillAura NoInvAttack false
-KillAura FailRate 0
-KillAura MaxTurnSpeed 55.05
-KillAura MinTurnSpeed 25.01
+KillAura FailRate 4.1
+KillAura MaxTurnSpeed 95.45
+KillAura MinTurnSpeed 50.75
 KillAura FakeSwing true
 KillAura RotationStrafe false
 KillAura SilentRotation true
-KillAura RandomCenter false
+KillAura RandomCenter true
 KillAura Outborder false
 KillAura FOV 180
 KillAura Mark true
@@ -155,19 +151,18 @@ LiquidWalk Mode AACFly
 LiquidWalk AACFlyMotion 0.50
 NoSlowBreak Air true
 NoSlowBreak Water true
-NoFall Mode AAC3.3.11
-NoSlow BlockForwardMultiplier 1.00
-NoSlow BlockStrafeMultiplier 1.00
-NoSlow ConsumeForwardMultiplier 0.99
-NoSlow ConsumeStrafeMultiplier 0.99
-NoSlow BowForwardMultiplier 1.00
-NoSlow BowStrafeMultiplier 1.00
+NoSlow BlockForwardMultiplier 0.97
+NoSlow BlockStrafeMultiplier 0.97
+NoSlow ConsumeStrafeMultiplier 0.97
+NoSlow ConsumeForwardMultiplier 0.97
+NoSlow BowForwardMultiplier 0.97
+NoSlow BowStrafeMultiplier 0.97
 NoSlow Packet true
 NoSlow Soulsand true
 NoWeb Mode AAC
-HitBox Size 0.2
-Reach CombatReach 5.9
-Reach BuildReach 5.4
+HitBox Size 0.4
+Reach CombatReach 5.69
+Reach BuildReach 5.31
 Phase Mode Mineplex
 Scaffold Mode Rewinside
 Scaffold MaxDelay 167
@@ -176,10 +171,10 @@ Scaffold AutoBlock true
 Scaffold StayAutoBlock true
 Scaffold Sprint false
 Scaffold Swing false
-Scaffold Search false
+Scaffold Search true
 Scaffold PlaceTiming Pre
 Scaffold Eagle true
-Scaffold EagleSilent false
+Scaffold EagleSilent true
 Scaffold PlaceableDelay true
 Scaffold Rotations true
 Scaffold KeepRotation true
@@ -191,7 +186,7 @@ Scaffold SameY false
 Scaffold AirSafe true
 Scaffold Counter true 
 Scaffold Mark true
-SuperKnockback HurtTime 10
+SuperKnockback HurtTime 7
 SlimeJump Mode Set
 SlimeJump Motion 0.47
 Speed Mode TeleportCubeCraft
@@ -202,7 +197,7 @@ Sprint Blindness true
 Sprint Food true
 Sprint CheckServerSide false
 Sprint CheckServerSideOnlyGround false
-Step Mode AAC
+Step Mode NCP
 Step Height 4.5
 Step Delay 210
 Teams Color true
@@ -231,10 +226,8 @@ HitBox toggle true
 SuperKnockback toggle true
 Velocity toggle true
 AntiCactus toggle true
-FastEat toggle true
 FastUse toggle true
 Reach toggle true
-CubeClipper toggle true
 CubeFastLadder toggle true
 SCubeJoin toggle true
 NoSlowBreak toggle true
@@ -258,12 +251,12 @@ Zoot toggle false
 Regen toggle false
 PotionSaver toggle false
 KeepAlive toggle false
+NoFall toggle false
 AntiAFK toggle false
 AutoRespawn toggle false
 AutoBreak toggle false
 Liquids toggle false
 Nuker toggle false
-Timer toggle false
 Tower toggle false
 Scaffold toggle false
 FastBow toggle false
@@ -282,7 +275,6 @@ Clip toggle false
 ConsoleSpammer toggle false
 Damage toggle false
 Ghost toggle false
-GhostHand toggle false
 GodMode toggle false
 ItemTeleport toggle false
 KeepContainer toggle false
@@ -300,7 +292,6 @@ AirLadder toggle false
 BlockWalk toggle false
 BufferSpeed toggle false
 BugUp toggle false
-FastStairs toggle false
 Freeze toggle false
 HighJump toggle false
 LadderJump toggle false
@@ -317,18 +308,17 @@ targetDead true
 
 # Chat
 chat &6This settings was made by &bSpoilerRules
-chat &2Settings Release: &4Hotfixes&f-&c7.1
-chat &b[Spoiler] &6My &5Discord Server&6: &6&lhttps://discord.gg/VAP5SSX
+chat &2Settings Release: &ePublic&f-&c7.2
+chat &b[Spoiler] &6My &5Discord Server&6: &6&lhttps://discord.gg/B27nbgJ
 chat &d[OwO] &aPingSpoof is &4bannable&a.
+chat &d[OwO] &aUse BoostHypixel Fly &4with 1.95 Timer&a.
 chat &d[OwO] &aDon't enable &4CubeFloat in Air&a, &4AutoBan&a.
 chat &d[OwO] &aDon't use Fly while &cenabled CubeFastLadder&a.
-chat &d[OwO] &aBoostHypixel Fly is working &ebut &4only &4&l20-25 &4blocks&a.
+chat &d[OwO] &aBoostHypixel Fly is working &ebut &4only &4&l5-20 &4blocks&a.
 chat &d[OwO] &aDon't try &cBreak a Obsidian &4in KillAura Hitting&a, &4AutoBan&a.
-chat &d[OwO] &aDon't use &cFastUse &awith &cFastEat &aModule, &4Don't Eat Glitch&a.
-chat &d[OwO] &4NoFall only work &4&l4 Blocks&a, &4Don't use NoFall in &cIce Blocks&a.
+chat &d[OwO] &aDo you want &4Break Blocks&a? &cSet Criticals to HypixelPacket:200Delay&a.
+chat &d[OwO] &aDon't use &cFastUse with &cFastEat don't use at same time &a, &4Don't Eat Glitch&a.
 chat &d[OwO] &cIceSpeed &4don't work in &4EggWars&a. Don't Jump with &cStrafe in Ice Block when &4You using IceSpeed&a.
 chat &5[UwU] &3This Settings is usable for &cmin 30 Minutes&3.
-chat &5[UwU] &3Don't use this settings when &4Your ping like 370ms or higher&3.
-chat &5[UwU] &3This settings &aSupported &3to &cscpritolotl Scprit &awith &cSCubeJoin&3.
-chat &5[UwU] &3This settings &aSupported &3to &5soulple-&bx&5'&6is&c's Scprit &awith &cFastEat&3.
+chat &5[UwU] &3Don't use this settings when &4Your ping like 385ms or higher&3.
 chat &5[UwU] &3This settings &aSupported &3to &cCubeCore 7-pre3 Scprit &awith &cCubeClipper&3, &cCubeFastLadder &3& &cCubeFloat&3.
