@@ -1,6 +1,6 @@
 # Spoiler Settings
 # Overview 
-We make high quality LiquidBounce settings
+We make high quality LiquidBounce & Sigma (ew)settings
 # License
 All settings are licensed with the latest version of the spoiler License.
 # Contact 
