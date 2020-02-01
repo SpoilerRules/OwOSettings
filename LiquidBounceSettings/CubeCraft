@@ -1,8 +1,8 @@
-#Settings for play.cubecraft.net
+ec#Settings for play.cubecraft.net
 NameProtect FakeName &aNoHax&1Just&6BetterSettings
 Aimbot TurnSpeed 180
 Aimbot Center false
-AutoArmor MaxDelay 55
+AutoArmor MaxDelay 60
 AutoArmor MinDelay 40
 AutoArmor InvOpen true
 AutoArmor SimulateInventory false
@@ -28,7 +28,7 @@ BowAimbot ThroughWalls false
 BowAimbot Priority Distance
 BowAimbot Mark true
 ChestAura Range 4.0
-ChestAura Delay 65
+ChestAura Delay 70
 ChestAura ThroughWalls false
 ChestAura VisualSwing false
 ChestAura Chest 54
@@ -121,11 +121,13 @@ AntiBot WasInvisible false
 AntiBot Armor false
 AntiBot Ping false
 AntiBot NeedHit false
+AntiBot DuplicateInWorld false
+AntiBot DuplicateInTab false
 KillAura MaxCPS 18
 KillAura MinCPS 15
 KillAura HurtTime 7
 KillAura Range 6.00
-KillAura ThroughWallsRange 4.0
+KillAura ThroughWallsRange 3.5
 KillAura RangeSprintReducement 0.25
 KillAura Priority Health
 KillAura TargetMode Switch
@@ -138,20 +140,21 @@ KillAura RayCast false
 KillAura RayCastIgnored true
 KillAura LivingRayCast false
 KillAura AAC true
-KillAura MaxTurnSpeed 67.67
-KillAura MinTurnSpeed 67.67
+KillAura MaxTurnSpeed 180.0
+KillAura MinTurnSpeed 180.0
 KillAura SilentRotation true
+KillAura RotationStrafe false
 KillAura RandomCenter false
 KillAura Outborder false
-KillAura FOV 180.67
+KillAura FOV 179.67
 KillAura Predict false
-KillAura FailRate 4.3
+KillAura FailRate 4.2
 KillAura FakeSwing true
 KillAura NoInvAttack false
 KillAura Mark true
 KillAura FakeSharp false
 Trigger MaxCPS 14
-Trigger MinCPS 14
+Trigger MinCPS 13
 LiquidWalk Mode AACFly
 LiquidWalk AACFlyMotion 0.50
 NoSlowBreak Air true
@@ -255,6 +258,7 @@ Sprint toggle true
 Step toggle true
 AbortBreaking toggle true
 AntiHunger toggle true
+PortalMenu toggle true
 
 # Toggle Off
 Zoot toggle false
@@ -311,7 +315,7 @@ targetDead true
 
 # Chat
 chat &6This settings was made by &bSpoilerRules
-chat &2Settings Release: &dReleased&f-&c7.3
+chat &2Settings Release: &c&lHotfix&f-&c7.3.91
 chat &f[&b&lSpoiler&f] &6My &5Discord Server&6: &6&lhttps://discord.gg/nq6gVsm
 chat &d[OwO] &aPingSpoof is &4bannable&a.
 chat &d[OwO] &cIceSpeed &4don't work in &4EggWars&a.
@@ -324,4 +328,4 @@ chat &d[OwO] &aDo you want &4Break Blocks&a? &cSet Criticals to HypixelPacket:20
 chat &d[OwO] &aIf you play in "&cFree For All&a" Arena PvP, &cEnable RotationStrafe Setting in Killaura &a(&c&l.killaura rotationstrafe on&a).
 chat &5[UwU] &3Don't use this settings when &4Your ping like 385ms or higher&3.
 chat &5[UwU] &3This settings &aSupported &3to &cCubeCore 7-pre3 Scprit &awith &cCubeClipper&3, &cCubeFastLadder &3& &cCubeFloat&3.
-chat &aNote: &5ยก&d&lCL&5&lI&d&lP BYPASS&5&lI&d&lNG THAN CUBECL&5&lI&d&lPPER &5& &d&lPHASE&5!
+chat &aNote: &d&lBYPASS&5&lI&d&lNG &5?
