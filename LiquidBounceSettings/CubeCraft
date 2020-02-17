@@ -2,34 +2,25 @@
 # Client: LiquidBounce Build70-71
 # Version: 1.8.9
 
-NameProtect FakeName &aNoHax&eJust&4Better&6Settings
+# Settings Latest Version
+load https://raw.githubusercontent.com/SpoilerRules/LiquidBounceSettingsAPI/master/CubeCraftSettingsAPI/SettingsVersion
+
+# Sentinel can detect Spawn Protection Hitting (like Bot) and for don't hit to NPC's
+load https://raw.githubusercontent.com/SpoilerRules/LiquidBounceSettingsAPI/master/CubeCraftSettingsAPI/AntiBotSettings
+
+# CubeSettings's Original NameProtect
+load https://raw.githubusercontent.com/SpoilerRules/LiquidBounceSettingsAPI/master/CubeCraftSettingsAPI/NameProtectAPI
+
+# Sentinel Long Hitting Check
+load https://raw.githubusercontent.com/SpoilerRules/LiquidBounceSettingsAPI/master/CubeCraftSettingsAPI/KillAuraFailrate
 
 Aimbot TurnSpeed 180
 Aimbot Center false
 
-# Sentinel can detect Spawn Protection Hitting (like Bot) and for don't hit to NPC's
-AntiBot Tab true
-AntiBot TabMode Contains
-AntiBot EntityID false
-AntiBot Color false
-AntiBot LivingTime true
-AntiBot Ground false
-AntiBot Air false
-AntiBot InvaildGround false
-AntiBot Swing false
-AntiBot Health false
-AntiBot Derp false
-AntiBot WasInvisible false
-AntiBot Armor false
-AntiBot Ping false
-AntiBot NeedHit false
-AntiBot DuplicateInWorld false
-AntiBot DuplicateInTab false
-
 AutoArmor MaxDelay 60
 AutoArmor MinDelay 40
 AutoArmor InvOpen true
-AutoArmor SimulateInventory false
+AutoArmor SimulateInventory falsesd
 AutoArmor NoMove false
 AutoArmor ItemDelay 1
 AutoArmor Hotbar false
@@ -149,7 +140,6 @@ IceSpeed Mode Spartan
 
 KillAura MaxCPS 18
 KillAura MinCPS 15
-KillAura HurtTime 7
 KillAura Range 6.00
 KillAura ThroughWallsRange 3.5
 KillAura RangeSprintReducement 0.25
@@ -172,8 +162,6 @@ KillAura RandomCenter false
 KillAura Outborder false
 KillAura FOV 179.67
 KillAura Predict false
-# Sentinel Long Hitting Check :c
-KillAura FailRate 4.2
 KillAura FakeSwing true
 KillAura NoInvAttack false
 KillAura Mark true
@@ -368,7 +356,7 @@ targetDead true
 
 # Chat
 chat &f[&d&lLicense&f] &6This &6&lsettings &6was made by &bSpoilerRules
-chat &2Settings Release: &dQuality&eUpdate&f-&c7.4
+chat &2Settings Release: &ePublic&3Test&f-&c7.5
 chat &f[&b&lSpoiler&f] &5Discord Server&6: &6&lhttps://discord.gg/nq6gVsm
 chat &f[&dOwO&f] &aPingSpoof is &4bannable&a.
 chat &f[&dOwO&f] &cIceSpeed &4don't work in &4EggWars&a.
@@ -379,4 +367,4 @@ chat &f[&dOwO&f] &aDo you want &4Break Blocks&a? &cSet Criticals to HypixelPacke
 chat &f[&dOwO&f] &aIf you play in "&cFree For All&a" Arena PvP, &cEnable RotationStrafe Setting in Killaura &a(&c&l.killaura rotationstrafe on&a).
 chat &f[&5UwU&f] &3Don't use this settings when &4Your ping like 385ms or higher&3.
 chat &f[&5UwU&f] &3This settings &aSupported &3to &cCubeCore 7-pre3 Scprit &awith &cCubeClipper&3, &cCubeFastLadder &3& &cCubeFloat&3.
-chat &aNote: &5¿&d&lSCAFFOLD &5&lI&d&lS BYPASSING&5?
+chat &aNote: &5¿&d&lSCAFFOLD &5&lI&d&lS BYPASSING&5? 
