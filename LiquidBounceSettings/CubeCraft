@@ -19,10 +19,10 @@ Aimbot Center false
 
 AutoArmor MaxDelay 60
 AutoArmor MinDelay 40
-AutoArmor InvOpen true
-AutoArmor SimulateInventory falsesd
+AutoArmor InvOpen falsed
+AutoArmor SimulateInventory true
 AutoArmor NoMove false
-AutoArmor ItemDelay 1
+AutoArmor ItemDelay 50
 AutoArmor Hotbar false
 
 AutoClicker MaxCPS 14
@@ -54,6 +54,7 @@ ChestAura Delay 70
 ChestAura ThroughWalls false
 ChestAura VisualSwing false
 ChestAura Chest 54
+ChestAura Rotations true
 
 ChestStealer MaxDelay 25
 ChestStealer MinDelay 25
@@ -115,7 +116,7 @@ HitBox Size 0.4
 
 InventoryCleaner MaxDelay 75
 InventoryCleaner MinDelay 67
-InventoryCleaner InvOpen true
+InventoryCleaner InvOpen false
 InventoryCleaner SimulateInventory true
 InventoryCleaner NoMove false
 InventoryCleaner Hotbar true
@@ -151,9 +152,9 @@ KillAura InteractAutoBlock true
 Killaura DelayedBlock false
 KillAura BlockRate 100
 KillAura RayCast false
-KillAura RayCastIgnored true
+KillAura RayCastIgnored false
 KillAura LivingRayCast false
-KillAura AAC true
+KillAura AAC false
 KillAura MaxTurnSpeed 180.0
 KillAura MinTurnSpeed 180.0
 KillAura SilentRotation true
@@ -238,14 +239,14 @@ Scaffold EagleSilent true
 Scaffold PlaceableDelay false
 Scaffold Rotations true
 Scaffold KeepRotation true
-Scaffold KeepRotationLength 4
+Scaffold KeepRotationLength 0
 Scaffold Zitter false
-Scaffold Timer 0.57
-Scaffold SpeedModifier 1.0
+Scaffold Timer 1.0
+Scaffold SpeedModifier 0.80
 Scaffold SafeWalk true
 Scaffold SameY false
 Scaffold AirSafe true
-Scaffold Counter true 
+Scaffold Counter true
 
 SlimeJump Mode Set
 SlimeJump Motion 0.47
@@ -258,8 +259,8 @@ Speed CubeCraft-PortLength 2.322
 Sprint AllDirections true
 Sprint Blindness true
 Sprint Food true
-Sprint CheckServerSide false
-Sprint CheckServerSideOnlyGround false
+Sprint CheckServerSide true
+Sprint CheckServerSideOnlyGround true
 
 Step Mode NCP
 Step Height 4.5
@@ -330,7 +331,7 @@ Ghost toggle false
 GodMode toggle false
 ItemTeleport toggle false
 KeepContainer toggle false
-Kick toggle false	
+Kick toggle false
 MoreCarry toggle false
 MultiActions toggle false
 NoPitchLimit toggle false
@@ -367,4 +368,4 @@ chat &f[&dOwO&f] &aDo you want &4Break Blocks&a? &cSet Criticals to HypixelPacke
 chat &f[&dOwO&f] &aIf you play in "&cFree For All&a" Arena PvP, &cEnable RotationStrafe Setting in Killaura &a(&c&l.killaura rotationstrafe on&a).
 chat &f[&5UwU&f] &3Don't use this settings when &4Your ping like 385ms or higher&3.
 chat &f[&5UwU&f] &3This settings &aSupported &3to &cCubeCore 7-pre3 Scprit &awith &cCubeClipper&3, &cCubeFastLadder &3& &cCubeFloat&3.
-chat &aNote: &5¿&d&lSCAFFOLD &5&lI&d&lS BYPASSING&5? 
+chat &aNote: &5¿&d&lSCAFFOLD &5&lI&d&lS BYPASSING&5?
