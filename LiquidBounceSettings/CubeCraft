@@ -1,12 +1,9 @@
 # Server: play.cubecraft.net
-# Client: LiquidBounce Build70-71
+# Client: LiquidBounce Build71
 # Version: 1.8.9
 
 # Settings Latest Version
 load https://raw.githubusercontent.com/SpoilerRules/LiquidBounceSettingsAPI/master/CubeCraftSettingsAPI/SettingsVersion
-
-# Sentinel can detect Spawn Protection Hitting (like Bot) and for don't hit to NPC's
-load https://raw.githubusercontent.com/SpoilerRules/LiquidBounceSettingsAPI/master/CubeCraftSettingsAPI/AntiBotSettings
 
 # CubeSettings's Original NameProtect
 load https://raw.githubusercontent.com/SpoilerRules/LiquidBounceSettingsAPI/master/CubeCraftSettingsAPI/NameProtectAPI
@@ -17,13 +14,32 @@ load https://raw.githubusercontent.com/SpoilerRules/LiquidBounceSettingsAPI/mast
 Aimbot TurnSpeed 180
 Aimbot Center false
 
+AntiBot Tab true
+AntiBot TabMode Contains
+AntiBot EntityID false
+AntiBot Color false
+AntiBot LivingTime true
+AntiBot LivingTimeTicks 122
+AntiBot Ground false
+AntiBot Air false
+AntiBot InvaildGround false
+AntiBot Swing false
+AntiBot Health false
+AntiBot Derp false
+AntiBot WasInvisible false
+AntiBot Armor false
+AntiBot Ping false
+AntiBot NeedHit false
+AntiBot DuplicateInWorld false
+AntiBot DuplicateInTab false
+
 AutoArmor MaxDelay 60
 AutoArmor MinDelay 40
-AutoArmor InvOpen falsed
-AutoArmor SimulateInventory true
+AutoArmor InvOpen false
+AutoArmor SimulateInventory false
 AutoArmor NoMove false
-AutoArmor ItemDelay 50
-AutoArmor Hotbar false
+AutoArmor ItemDelay 35
+AutoArmor Hotbar true
 
 AutoClicker MaxCPS 14
 AutoClicker MinCPS 14
@@ -54,7 +70,6 @@ ChestAura Delay 70
 ChestAura ThroughWalls false
 ChestAura VisualSwing false
 ChestAura Chest 54
-ChestAura Rotations true
 
 ChestStealer MaxDelay 25
 ChestStealer MinDelay 25
@@ -66,10 +81,6 @@ ChestStealer AutoCloseMaxDelay 150
 ChestStealer AutoCloseMinDelay 120
 ChestStealer CloseOnFull true
 ChestStealer ChestTitle true
-
-CubeFastLadder Movement 1.95
-CubeFastLadder TickRate 2
-CubeFastLadder Timer 0.40
 
 CubeClipper NeededPackets 15
 CubeClipper FallingSpeed 1.00
@@ -87,14 +98,18 @@ CubeFloat LandingSpeed 0.30
 
 Criticals Mode NoGround
 Criticals Delay 0
-Criticals HurtTime 7
+Criticals HurtTime 10
 
 Clip Mode Teleport
 Clip Horizontal 0.0
 Clip Vertical -2.66
 
-FastClimb Mode Normal
-FastClimb NormalSpeed 0.28
+FastClimb Mode Vanilla
+FastClimb Speed 0.28
+
+FastStairs Mode Step
+FastStairs LongJump false
+
 FastPlace Speed 0
 
 FastUse Mode CustomDelay
@@ -104,7 +119,7 @@ Fly Mode CubeCraft
 
 Fucker Block 122
 Fucker ThroughWalls RayCast
-Fucker Range 5.01
+Fucker Range 7
 Fucker Action Destroy
 Fucker Instant false
 Fucker SwitchDelay 90
@@ -116,10 +131,10 @@ HitBox Size 0.4
 
 InventoryCleaner MaxDelay 75
 InventoryCleaner MinDelay 67
-InventoryCleaner InvOpen false
-InventoryCleaner SimulateInventory true
+InventoryCleaner InvOpen true
+InventoryCleaner SimulateInventory false
 InventoryCleaner NoMove false
-InventoryCleaner Hotbar true
+InventoryCleaner Hotbar false
 InventoryCleaner RandomSlot true
 InventoryCleaner Sort true
 InventoryCleaner ItemDelay 0
@@ -139,14 +154,14 @@ InventoryMove NoMoveClicks false
 
 IceSpeed Mode Spartan
 
-KillAura MaxCPS 18
-KillAura MinCPS 15
+KillAura MaxCPS 15
+KillAura MinCPS 13
+KillAura HurtTime 10
 KillAura Range 6.00
 KillAura ThroughWallsRange 3.5
-KillAura RangeSprintReducement 0.25
-KillAura Priority Health
+KillAura RangeSprintReducement 0.00
+KillAura Priority LivingTime
 KillAura TargetMode Switch
-KillAura Swing true
 KillAura KeepSprint true
 KillAura InteractAutoBlock true
 Killaura DelayedBlock false
@@ -161,7 +176,7 @@ KillAura SilentRotation true
 KillAura RotationStrafe false
 KillAura RandomCenter false
 KillAura Outborder false
-KillAura FOV 179.67
+KillAura FOV 180.0
 KillAura Predict false
 KillAura FakeSwing true
 KillAura NoInvAttack false
@@ -179,13 +194,13 @@ NoSlowBreak Water true
 
 NoSlow BlockForwardMultiplier 1.00
 NoSlow BlockStrafeMultiplier 1.00
-# really idk how to sentinel detect consume noslow a bit
-NoSlow ConsumeStrafeMultiplier 0.95
-NoSlow ConsumeForwardMultiplier 0.95
+# really idk how to sentinel detect consume noslow a bit and flags you in-player hitting you.
+NoSlow ConsumeStrafeMultiplier 1.00
+NoSlow ConsumeForwardMultiplier 1.00
 NoSlow BowForwardMultiplier 1.00
 NoSlow BowStrafeMultiplier 1.00
 NoSlow Packet true
-NoSlow Soulsand true
+NoSlow Soulsand false
 
 NoRotateSet Confirm false
 NoRotateSet ConfirmIllegalRotation false
@@ -215,7 +230,7 @@ Tower KeepRotation true
 Tower OnJump true
 Tower PlaceTiming Post
 Tower TeleportHeight 1.00
-Tower Timer 0.95
+Tower Timer 0.80
 Tower Counter true
 Tower TeleportGround true
 Tower TeleportNoMotion false
@@ -231,7 +246,6 @@ Scaffold MinDelay 67
 Scaffold AutoBlock true
 Scaffold StayAutoBlock true
 Scaffold Sprint false
-Scaffold Swing false
 Scaffold Search false
 Scaffold PlaceTiming Pre
 Scaffold Eagle true
@@ -239,14 +253,14 @@ Scaffold EagleSilent true
 Scaffold PlaceableDelay false
 Scaffold Rotations true
 Scaffold KeepRotation true
-Scaffold KeepRotationLength 0
+Scaffold KeepRotationLength 4
 Scaffold Zitter false
-Scaffold Timer 1.0
+Scaffold Timer 0.99
 Scaffold SpeedModifier 0.80
 Scaffold SafeWalk true
 Scaffold SameY false
 Scaffold AirSafe true
-Scaffold Counter true
+Scaffold Counter true 
 
 SlimeJump Mode Set
 SlimeJump Motion 0.47
@@ -259,8 +273,8 @@ Speed CubeCraft-PortLength 2.322
 Sprint AllDirections true
 Sprint Blindness true
 Sprint Food true
-Sprint CheckServerSide true
-Sprint CheckServerSideOnlyGround true
+Sprint CheckServerSide false
+Sprint CheckServerSideOnlyGround false
 
 Step Mode NCP
 Step Height 4.5
@@ -282,13 +296,13 @@ Velocity toggle true
 AntiCactus toggle true
 FastUse toggle true
 Reach toggle true
-CubeFastLadder toggle true
 NoSlowBreak toggle true
 AntiBot toggle true
 MidClick toggle true
 NameProtect toggle true
 NoRotateSet toggle true
 ResourcePackSpoof toggle true
+FastClimb toggle true
 InventoryMove toggle true
 LiquidWalk toggle true
 NoJumpDelay toggle true
@@ -331,7 +345,7 @@ Ghost toggle false
 GodMode toggle false
 ItemTeleport toggle false
 KeepContainer toggle false
-Kick toggle false
+Kick toggle false	
 MoreCarry toggle false
 MultiActions toggle false
 NoPitchLimit toggle false
@@ -355,9 +369,14 @@ WaterSpeed toggle false
 targetPlayer true
 targetDead true
 
+unchat &r
+unchat &r
+unchat &r
+unchat &r
+
 # Chat
 chat &f[&d&lLicense&f] &6This &6&lsettings &6was made by &bSpoilerRules
-chat &2Settings Release: &ePublic&3Test&f-&c7.5
+chat &2Settings Release: &b&lDev&f-&c7.5
 chat &f[&b&lSpoiler&f] &5Discord Server&6: &6&lhttps://discord.gg/nq6gVsm
 chat &f[&dOwO&f] &aPingSpoof is &4bannable&a.
 chat &f[&dOwO&f] &cIceSpeed &4don't work in &4EggWars&a.
@@ -367,5 +386,5 @@ chat &f[&dOwO&f] &aDon't try &cBreak a Obsidian &4while KillAura Hitting&a, &4Au
 chat &f[&dOwO&f] &aDo you want &4Break Blocks&a? &cSet Criticals to HypixelPacket:200Delay&a.
 chat &f[&dOwO&f] &aIf you play in "&cFree For All&a" Arena PvP, &cEnable RotationStrafe Setting in Killaura &a(&c&l.killaura rotationstrafe on&a).
 chat &f[&5UwU&f] &3Don't use this settings when &4Your ping like 385ms or higher&3.
-chat &f[&5UwU&f] &3This settings &aSupported &3to &cCubeCore 7-pre3 Scprit &awith &cCubeClipper&3, &cCubeFastLadder &3& &cCubeFloat&3.
-chat &aNote: &5¿&d&lSCAFFOLD &5&lI&d&lS BYPASSING&5?
+chat &f[&5UwU&f] &3This settings &aSupported &3to &cCubeCore 7-pre3 Scprit &awith &cCubeClipper&3 &3& &cCubeFloat&3.
+chat &aNote: &5¿&d&lKILLAURA &5I&d&lS BYPASS&5I&d&lNG&5?
