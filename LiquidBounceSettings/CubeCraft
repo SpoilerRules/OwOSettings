@@ -35,11 +35,11 @@ AntiBot DuplicateInTab false
 
 AutoArmor MaxDelay 60
 AutoArmor MinDelay 40
-AutoArmor InvOpen false
+AutoArmor InvOpen true
 AutoArmor SimulateInventory false
 AutoArmor NoMove false
-AutoArmor ItemDelay 35
-AutoArmor Hotbar true
+AutoArmor ItemDelay 0
+AutoArmor Hotbar false
 
 AutoClicker MaxCPS 14
 AutoClicker MinCPS 14
@@ -58,6 +58,8 @@ AutoSoup Delay 67
 AutoSoup SimulateInventory true
 
 AutoWeapon SpoofItem false
+
+BlockAnimation Fake true
 
 BowAimbot Silent true
 BowAimbot Predict false
@@ -87,10 +89,10 @@ CubeClipper FallingSpeed 1.00
 CubeClipper MaxUpDistance 2
 CubeClipper MaxDownDistance 10
 
-CubeFloat MovementDistance 2.67
+CubeFloat MovementDistance 2.42
 CubeFloat AdditionalDistance 0.20
 CubeFloat MovementTimer 0.50
-CubeFloat AdditionalTimer 1.27
+CubeFloat AdditionalTimer 1.30
 CubeFloat AltitudeVariation 0.60
 CubeFloat WaitTicks 12
 CubeFloat ClipDistance -0.45
@@ -119,10 +121,10 @@ Fly Mode CubeCraft
 
 Fucker Block 122
 Fucker ThroughWalls RayCast
-Fucker Range 7
+Fucker Range 7.0
 Fucker Action Destroy
 Fucker Instant false
-Fucker SwitchDelay 90
+Fucker SwitchDelay 67
 Fucker Swing false
 Fucker Surroundings false
 Fucker NoHit true
@@ -130,12 +132,12 @@ Fucker NoHit true
 HitBox Size 0.4
 
 InventoryCleaner MaxDelay 75
-InventoryCleaner MinDelay 67
+InventoryCleaner MinDelay 63
 InventoryCleaner InvOpen true
 InventoryCleaner SimulateInventory false
 InventoryCleaner NoMove false
-InventoryCleaner Hotbar false
-InventoryCleaner RandomSlot true
+InventoryCleaner Hotbar true
+InventoryCleaner RandomSlot false
 InventoryCleaner Sort true
 InventoryCleaner ItemDelay 0
 InventoryCleaner SortSlot-1 Sword
@@ -157,8 +159,8 @@ IceSpeed Mode Spartan
 KillAura MaxCPS 15
 KillAura MinCPS 13
 KillAura HurtTime 10
-KillAura Range 6.00
-KillAura ThroughWallsRange 3.5
+KillAura Range 5.7
+KillAura ThroughWallsRange 3.10
 KillAura RangeSprintReducement 0.00
 KillAura Priority LivingTime
 KillAura TargetMode Switch
@@ -166,19 +168,21 @@ KillAura KeepSprint true
 KillAura InteractAutoBlock true
 Killaura DelayedBlock false
 KillAura BlockRate 100
-KillAura RayCast false
-KillAura RayCastIgnored false
+KillAura RayCast true
+KillAura RayCastIgnored true
 KillAura LivingRayCast false
-KillAura AAC false
-KillAura MaxTurnSpeed 180.0
-KillAura MinTurnSpeed 180.0
+KillAura AAC true
+KillAura MaxTurnSpeed 55.25
+KillAura MinTurnSpeed 25.50
 KillAura SilentRotation true
 KillAura RotationStrafe false
 KillAura RandomCenter false
 KillAura Outborder false
 KillAura FOV 180.0
-KillAura Predict false
-KillAura FakeSwing true
+KillAura Predict true
+KillAura MaxPredictSize 2.16
+KillAura MinPredictSize 1.12
+KillAura FakeSwing false
 KillAura NoInvAttack false
 KillAura Mark true
 KillAura FakeSharp false
@@ -194,15 +198,14 @@ NoSlowBreak Water true
 
 NoSlow BlockForwardMultiplier 1.00
 NoSlow BlockStrafeMultiplier 1.00
-# really idk how to sentinel detect consume noslow a bit and flags you in-player hitting you.
-NoSlow ConsumeStrafeMultiplier 1.00
-NoSlow ConsumeForwardMultiplier 1.00
+NoSlow ConsumeStrafeMultiplier 0.25
+NoSlow ConsumeForwardMultiplier 0.25
 NoSlow BowForwardMultiplier 1.00
 NoSlow BowStrafeMultiplier 1.00
 NoSlow Packet true
 NoSlow Soulsand false
 
-NoRotateSet Confirm false
+NoRotateSet Confirm true
 NoRotateSet ConfirmIllegalRotation false
 NoRotateSet NoZero true
 
@@ -246,6 +249,7 @@ Scaffold MinDelay 67
 Scaffold AutoBlock true
 Scaffold StayAutoBlock true
 Scaffold Sprint false
+Scaffold Swing false
 Scaffold Search false
 Scaffold PlaceTiming Pre
 Scaffold Eagle true
@@ -303,9 +307,9 @@ NameProtect toggle true
 NoRotateSet toggle true
 ResourcePackSpoof toggle true
 FastClimb toggle true
+FastStairs toggle true
 InventoryMove toggle true
 LiquidWalk toggle true
-NoJumpDelay toggle true
 NoSlow toggle true
 NoWeb toggle true
 SlimeJump toggle true
@@ -324,11 +328,8 @@ KeepAlive toggle false
 NoFall toggle false
 AntiAFK toggle false
 AutoRespawn toggle false
-AutoBreak toggle false
 Liquids toggle false
 Nuker toggle false
-Tower toggle false
-Scaffold toggle false
 FastBow toggle false
 Ignite toggle false
 TNTBlock toggle false
@@ -336,7 +337,6 @@ TeleportHit toggle fals
 ComponentOnHover toggle false
 Derp toggle false
 SkinDerp toggle false
-CubeFloat toggle false
 SDerp toggle false
 BedGodMode toggle false
 ConsoleSpammer toggle false
@@ -354,16 +354,23 @@ PingSpoof toggle false
 ServerCrasher toggle false
 AirJump toggle false
 AirLadder toggle false
-BlockWalk toggle false
 BufferSpeed toggle false
 BugUp toggle false
 Freeze toggle false
 HighJump toggle false
 LadderJump toggle false
 NoClip toggle false
+NoJumpDelay toggle false
 Strafe toggle false
 WallClimb toggle false
 WaterSpeed toggle false
+
+# Toggle Off in Lobby
+Tower toggle false
+Scaffold toggle false
+CubeFloat toggle false
+AutoBreak toggle false
+BlockWalk toggle false
 
 # Target Settings
 targetPlayer true
@@ -373,18 +380,21 @@ unchat &r
 unchat &r
 unchat &r
 unchat &r
+unchat &r
+unchat &r
+unchat &r
 
 # Chat
-chat &f[&d&lLicense&f] &6This &6&lsettings &6was made by &bSpoilerRules
-chat &2Settings Release: &b&lDev&f-&c7.5
-chat &f[&b&lSpoiler&f] &5Discord Server&6: &6&lhttps://discord.gg/nq6gVsm
-chat &f[&dOwO&f] &aPingSpoof is &4bannable&a.
-chat &f[&dOwO&f] &cIceSpeed &4don't work in &4EggWars&a.
-chat &f[&dOwO&f] &aDon't use Fly while &cenabled CubeFastLadder&a.
-chat &f[&dOwO&f] &aBoostHypixel Fly is working &ebut &4only &4&l5-20 &4blocks&a.
-chat &f[&dOwO&f] &aDon't try &cBreak a Obsidian &4while KillAura Hitting&a, &4AutoBan&a.
-chat &f[&dOwO&f] &aDo you want &4Break Blocks&a? &cSet Criticals to HypixelPacket:200Delay&a.
-chat &f[&dOwO&f] &aIf you play in "&cFree For All&a" Arena PvP, &cEnable RotationStrafe Setting in Killaura &a(&c&l.killaura rotationstrafe on&a).
-chat &f[&5UwU&f] &3Don't use this settings when &4Your ping like 385ms or higher&3.
-chat &f[&5UwU&f] &3This settings &aSupported &3to &cCubeCore 7-pre3 Scprit &awith &cCubeClipper&3 &3& &cCubeFloat&3.
-chat &aNote: &5¿&d&lKILLAURA &5I&d&lS BYPASS&5I&d&lNG&5?
+unchat &f[&d&lLicense&f] &6This &6&lsettings &6made by &bSpoilerRules
+unchat &7[&bCube&3Settings&7] &2Settings Release&f: &5Hot&3fix&5es&f-&c7.5
+unchat &f[&b&lSpoiler&f] &5Discord Server&6&f: &6&lv.ht/&b&lscorpion3013&6&lareBest
+unchat &f[&dOwO&f] &aPingSpoof is &4bannable&a.
+unchat &f[&dOwO&f] &aDon't &cEnable CubeFloat &ain &cAir&a, &4AutoBan&a.
+unchat &f[&dOwO&f] &cIceSpeed &4don't work &cin &4EggWars&a.
+unchat &f[&dOwO&f] &aBoostHypixel Fly is working &ebut &4only &4&l5-20 &4blocks&a.
+unchat &f[&dOwO&f] &aTo break blocks&a: &cSet Criticals to HypixelPacket:200Delay&a.
+unchat &f[&dOwO&f] &aDon't try &cBreak a Obsidian &4while KillAura Hitting&a, &4AutoBan&a.
+unchat &f[&dOwO&f] &aIf you play in "&cFree For All&a" Arena PvP, &cEnable RotationStrafe Setting in Killaura &a(&c&l.killaura rotationstrafe on&a).
+unchat &f[&5UwU&f] &3Don't use this settings when &4Your ping like 365ms or higher&3.
+unchat &f[&5UwU&f] &3This settings &aSupported &3to &cCubeCore 7-pre3 Scprit &awith &cCubeClipper&3 &3& &cCubeFloat&3.
+unchat &7[&bCube&3Settings&7] &aNote&f: &6&lREKT &d&lSENT&5&lI&d&lNEL DEVELOPER
