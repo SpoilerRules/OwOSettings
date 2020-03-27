@@ -11,8 +11,7 @@ load https://raw.githubusercontent.com/SpoilerRules/LiquidBounceSettingsAPI/mast
 # Sentinel Long Hitting Check
 load https://raw.githubusercontent.com/SpoilerRules/LiquidBounceSettingsAPI/master/CubeCraftSettingsAPI/KillAuraFailrate
 
-Aimbot TurnSpeed 180
-Aimbot Center false
+Aimbot TurnSpeed 95.00
 
 AntiBot Tab true
 AntiBot TabMode Contains
@@ -33,7 +32,7 @@ AntiBot NeedHit false
 AntiBot DuplicateInWorld false
 AntiBot DuplicateInTab false
 
-AutoArmor MaxDelay 60
+AutoArmor MaxDelay 50
 AutoArmor MinDelay 40
 AutoArmor InvOpen true
 AutoArmor SimulateInventory false
@@ -59,7 +58,7 @@ AutoSoup SimulateInventory true
 
 AutoWeapon SpoofItem false
 
-BlockAnimation Fake true
+Blink Pulse false
 
 BowAimbot Silent true
 BowAimbot Predict false
@@ -89,10 +88,10 @@ CubeClipper FallingSpeed 1.00
 CubeClipper MaxUpDistance 2
 CubeClipper MaxDownDistance 10
 
-CubeFloat MovementDistance 2.42
+CubeFloat MovementDistance 2.48
 CubeFloat AdditionalDistance 0.20
 CubeFloat MovementTimer 0.50
-CubeFloat AdditionalTimer 1.30
+CubeFloat AdditionalTimer 1.24
 CubeFloat AltitudeVariation 0.60
 CubeFloat WaitTicks 12
 CubeFloat ClipDistance -0.45
@@ -131,7 +130,7 @@ Fucker NoHit true
 
 HitBox Size 0.4
 
-InventoryCleaner MaxDelay 75
+InventoryCleaner MaxDelay 67
 InventoryCleaner MinDelay 63
 InventoryCleaner InvOpen true
 InventoryCleaner SimulateInventory false
@@ -168,20 +167,20 @@ KillAura KeepSprint true
 KillAura InteractAutoBlock true
 Killaura DelayedBlock false
 KillAura BlockRate 100
-KillAura RayCast true
+KillAura RayCast false
 KillAura RayCastIgnored true
 KillAura LivingRayCast false
 KillAura AAC true
-KillAura MaxTurnSpeed 55.25
-KillAura MinTurnSpeed 25.50
+KillAura MaxTurnSpeed 70.00
+KillAura MinTurnSpeed 50.00
 KillAura SilentRotation true
 KillAura RotationStrafe false
 KillAura RandomCenter false
 KillAura Outborder false
 KillAura FOV 180.0
 KillAura Predict true
-KillAura MaxPredictSize 2.16
-KillAura MinPredictSize 1.12
+KillAura MaxPredictSize 1.50
+KillAura MinPredictSize 1.00
 KillAura FakeSwing false
 KillAura NoInvAttack false
 KillAura Mark true
@@ -221,7 +220,7 @@ Teams Color true
 Teleport Mode Blink
 
 Trigger MaxCPS 14
-Trigger MinCPS 13
+Trigger MinCPS 14
 
 Tower Mode Teleport
 Tower AutoBlock true
@@ -238,7 +237,7 @@ Tower Counter true
 Tower TeleportGround true
 Tower TeleportNoMotion false
 
-Reach CombatReach 5.69
+Reach CombatReach 5.70
 Reach BuildReach 5.00
 
 ReverseStep Motion 1.0
@@ -361,11 +360,13 @@ HighJump toggle false
 LadderJump toggle false
 NoClip toggle false
 NoJumpDelay toggle false
+Sneak toggle false
 Strafe toggle false
 WallClimb toggle false
 WaterSpeed toggle false
 
 # Toggle Off in Lobby
+Blink toggle false
 Tower toggle false
 Scaffold toggle false
 CubeFloat toggle false
@@ -374,7 +375,21 @@ BlockWalk toggle false
 
 # Target Settings
 targetPlayer true
-targetDead true
+targetDead false
+
+unchat &r
+
+unchat &7# &f&lCubeCraft Settings 7.6 Change-log
+
+# CubeCraft Settings 7.6 Change-log
+unchat &7[&bCube&3Settings&f-&8&lUpdates&7] &7[&a+&7] &cAdded     &9Blink
+unchat &7[&bCube&3Settings&f-&8&lUpdates&7] &7[&a#&7] &3Improved &9AutoArmor
+unchat &7[&bCube&3Settings&f-&8&lUpdates&7] &7[&a#&7] &3Improved &9AutoClicker
+unchat &7[&bCube&3Settings&f-&8&lUpdates&7] &7[&a#&7] &3Improved &9KillAura
+unchat &7[&bCube&3Settings&f-&8&lUpdates&7] &7[&a#&7] &3Improved &9InventoryCleaner
+unchat &7[&bCube&3Settings&f-&8&lUpdates&7] &7[&a#&7] &3Improved &9Trigger
+unchat &7[&bCube&3Settings&f-&8&lUpdates&7] &7[&a>&7] &2Updated   &9Aimbot
+unchat &7[&bCube&3Settings&f-&8&lUpdates&7] &7[&a~&7] &eFixed      &9CubeFloat
 
 unchat &r
 unchat &r
@@ -386,15 +401,17 @@ unchat &r
 
 # Chat
 unchat &f[&d&lLicense&f] &6This &6&lsettings &6made by &bSpoilerRules
-unchat &7[&bCube&3Settings&7] &2Settings Release&f: &5Hot&3fix&5es&f-&c7.5
-unchat &f[&b&lSpoiler&f] &5Discord Server&6&f: &6&lv.ht/&b&lscorpion3013&6&lareBest
+unchat &7[&bCube&3Settings&7] &2Settings Release&f: &ePublic&f-&c7.6
+unchat &f[&b&lSpoiler&f] &5Discord Server&6&f: &6&lv.ht/CubeSettings
 unchat &f[&dOwO&f] &aPingSpoof is &4bannable&a.
-unchat &f[&dOwO&f] &aDon't &cEnable CubeFloat &ain &cAir&a, &4AutoBan&a.
 unchat &f[&dOwO&f] &cIceSpeed &4don't work &cin &4EggWars&a.
+unchat &f[&dOwO&f] &aDisable &eAntiBot &aon "&cFree for All&a"&a.
+unchat &f[&dOwO&f] &aDon't &cEnable CubeFloat &ain &cAir&a, &4AutoBan&a.
 unchat &f[&dOwO&f] &aBoostHypixel Fly is working &ebut &4only &4&l5-20 &4blocks&a.
-unchat &f[&dOwO&f] &aTo break blocks&a: &cSet Criticals to HypixelPacket:200Delay&a.
 unchat &f[&dOwO&f] &aDon't try &cBreak a Obsidian &4while KillAura Hitting&a, &4AutoBan&a.
+unchat &f[&dOwO&f] &aTo break blocks&a: &aSet Criticals &ato &cHypixelPacket&f:&c200-Delay&f:&c1-HurtTime&a.
 unchat &f[&dOwO&f] &aIf you play in "&cFree For All&a" Arena PvP, &cEnable RotationStrafe Setting in Killaura &a(&c&l.killaura rotationstrafe on&a).
+unchat &f[&dOwO&f] &aDo not use movement modules (&cFly/CubeFloat, Scaffold, Speed etc. CubeClipper etc. is usable.&a) while using Blink, &4Don't work&a.
 unchat &f[&5UwU&f] &3Don't use this settings when &4Your ping like 365ms or higher&3.
 unchat &f[&5UwU&f] &3This settings &aSupported &3to &cCubeCore 7-pre3 Scprit &awith &cCubeClipper&3 &3& &cCubeFloat&3.
-unchat &7[&bCube&3Settings&7] &aNote&f: &6&lREKT &d&lSENT&5&lI&d&lNEL DEVELOPER
+unchat &7[&bCube&3Settings&7] &aNote&f: &d&lFULL BYPASS
